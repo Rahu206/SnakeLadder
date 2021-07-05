@@ -1,5 +1,5 @@
 public class SnakeLadder{
-public static void main(String args[]){
+	public static void main(String args[]){
 		System.out.println("Welcome to the player");
 		int position = 0;
 		int roll = 0;
@@ -15,6 +15,7 @@ public static void main(String args[]){
 			roll++;
 			if (position>100) 
 				position -= score;
+                	System.out.println(position);
 			break;
 		case 2:
                 	//score = (int) Math.floor(Math.random()*10)%6;
@@ -23,10 +24,11 @@ public static void main(String args[]){
 			}else {
 			position = 0;
 			}
+                	System.out.println(position);
 			roll++;
 			break;
 		default:
-			//System.out.println("No chance to play");
+			System.out.println("No chance to play");
 			roll++;
 		}
 		}
